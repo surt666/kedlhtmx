@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <script src="dist/kedlfront.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--script src="https://unpkg.com/hyperscript.org@0.9.11"></script-->
+  <script src="https://unpkg.com/htmx.org/dist/ext/ws.js"></script>
+</head>
+
+<body>
+  <div class="h-screen" id="app">
+    <div id="header" hx-get="https://7e2e4g8r39.execute-api.eu-west-1.amazonaws.com/prod"
+      hx-vals='{"req_type":"get_header", "logged_in": true}' hx-trigger="load" hx-swap="outerHTML">
+    </div>
+    <div id="main" hx-get="https://7e2e4g8r39.execute-api.eu-west-1.amazonaws.com/prod"
+      hx-vals='{"req_type":"get_home"}' hx-trigger="load" hx-swap="outerHTML">
+    </div>
+  </div>
+</body>
+
+</html>
