@@ -1,0 +1,14 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "My Example Project",
+  "dependencies": {
+    "htmx.org": "^1.9.5",
+    "hyperscript.org": "^0.9.11",
+    "js-base64": "^3.7.5",
+    "mustache": "^4.2.0"
+  },
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.3.9"
+  }
+}
